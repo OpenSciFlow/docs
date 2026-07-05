@@ -9,6 +9,7 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - `concepts/local-agent.md`: how local execution works.
 - `concepts/reproducibility.md`: what each run should record.
 - `tutorials/first-md-stability-run.md`: first planned reference demo.
+- `reference/contribution-routes.md`: where different contributors should start.
 - `reference/faq.md`: common questions.
 - `reference/glossary.md`: short definitions.
 
@@ -35,4 +36,3 @@ It focuses on:
 ## BioPilot relationship
 
 BioPilot is the first reference prototype under the OpenSciFlow initiative. It starts with protein-computing workflows, especially molecular dynamics stability analysis.
-
