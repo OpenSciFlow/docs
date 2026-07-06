@@ -9,7 +9,7 @@ The near-term goal is to turn the current protocol drafts into small, reviewable
 As of 2026-07-06:
 
 - public GitHub organization exists;
-- landscape map includes 79+ related projects;
+- landscape map includes 83+ related projects;
 - plugin manifest schema validates 7 example manifests;
 - workflow template schema validates 5 protein workflow templates;
 - command-template placeholder validation and minimal rendering fixtures exist for plugin examples;
