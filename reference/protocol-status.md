@@ -14,7 +14,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Workflow DAG validation | `workflow-templates` | Step/DAG consistency checks | Draft structural validation |
 | Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 5 protein templates | Draft executable-structure validation |
 | Run record schema | `biopilot-prototype` | JSON Schema, sample run record, CI validation | Draft reproducibility record |
-| BioPilot prototype | `biopilot-prototype` | MVP runbook, API draft, sample-data policy | Prototype plan, not full implementation |
+| BioPilot prototype | `biopilot-prototype` | MVP runbook, API draft, sample-data policy, protocol compliance plan | Prototype plan, not full implementation |
 | Landscape map | `awesome-ai4s-workflows` | 79+ related projects | Correction-friendly map |
 | Position paper | `whitepaper` | position note and draft text | Framing draft |
 
@@ -47,3 +47,4 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 - v0.2 RFC outline: `reference/v0.2-rfc-outline.md`
 - R3 evidence template: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/r3-evidence-template.md
 - Artifact handoff validation: https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/artifact-handoff-validation.md
+- BioPilot compliance plan: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/protocol-compliance-plan.md
