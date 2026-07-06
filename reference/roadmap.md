@@ -29,7 +29,7 @@ One narrow workflow can move from metadata draft to dry-run evidence.
 Priorities:
 
 - Move `mdanalysis-trajectory-analysis` toward `R3 dry-run ready`.
-- Record the exact dry-run environment and command output.
+- Convert the recorded failed MDAnalysis dry-run attempt into passing R3 evidence in a documented environment.
 - Add a small command-rendering test fixture for manifest placeholders.
 - Stress-test workflow artifact handoff checks for optional branches and fallback tools.
 - Decide the first public sample trajectory and verify license/citation metadata.

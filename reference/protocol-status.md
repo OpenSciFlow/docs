@@ -30,7 +30,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 - No manifest should be treated as a stable standard.
 - No plugin is certified for scientific correctness.
-- `mdanalysis-trajectory-analysis` is not yet `R3`; dry-run evidence is still missing.
+- `mdanalysis-trajectory-analysis` is not yet `R3`; one failed local dry-run attempt is recorded, and passing dry-run evidence is still missing.
 - BioPilot has not yet executed the full protein MD stability workflow.
 - Sample data is still a candidate until license, citation, size, and hashes are recorded.
 
