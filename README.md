@@ -10,6 +10,7 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - `concepts/reproducibility.md`: what each run should record.
 - `tutorials/first-md-stability-run.md`: first planned reference demo.
 - `reference/contribution-routes.md`: where different contributors should start.
+- `reference/review-checklists.md`: direct links to current review checklists.
 - `reference/faq.md`: common questions.
 - `reference/glossary.md`: short definitions.
 
@@ -18,6 +19,8 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - Plugin protocol roadmap: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/protocol-roadmap.md
 - Readiness levels: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/readiness-levels.md
 - Local agent contract: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/agent-contract.md
+- Manifest review checklist: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/manifest-review-checklist.md
+- Workflow review checklist: https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/workflow-review-checklist.md
 - Model manifest backlog: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/model-manifest-backlog.md
 - Promotion kit: https://github.com/OpenSciFlow/community/blob/main/outreach/promotion-kit.md
 

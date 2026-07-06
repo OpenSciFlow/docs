@@ -32,12 +32,8 @@ Start here:
 
 Review checklist:
 
-- Does the command template match upstream usage?
-- Are required inputs and outputs explicit?
-- Are model weights, data, and environment requirements represented correctly?
-- Is a dry run or smoke test possible?
-- Are license and citation fields clear?
-- Are scientific limitations stated before execution?
+- Use the manifest review checklist: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/manifest-review-checklist.md
+- Check whether the manifest should stay at its current readiness level: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/readiness-levels.md
 
 ## If you want to propose a workflow template
 
@@ -55,6 +51,10 @@ A good v0.1 workflow template should include:
 - estimated runtime;
 - limitations;
 - citation and license propagation.
+
+Use the workflow review checklist:
+
+- https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/workflow-review-checklist.md
 
 Avoid broad "autonomous scientist" workflows. Start with a narrow, repeatable task.
 
