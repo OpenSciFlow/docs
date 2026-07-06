@@ -17,7 +17,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 6 protein templates | Draft executable-structure validation |
 | Run record schema | `biopilot-prototype` | JSON Schema, sample run record, CI validation | Draft reproducibility record |
 | BioPilot prototype | `biopilot-prototype` | MVP runbook, API draft, demo request schema, sample-data policy, sample-data metadata template, protocol compliance plan | Prototype plan with validated request fixture |
-| Landscape map | `awesome-ai4s-workflows` | 83+ related projects | Correction-friendly map |
+| Landscape map | `awesome-ai4s-workflows` | 83 related projects, 83 assessment records, CI validation | Correction-friendly map |
 | Position paper | `whitepaper` | position note and draft text | Framing draft |
 
 ## What has CI today
@@ -28,6 +28,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | `opensciflow-skill` | Validate skill fixtures | Skill input/output schemas, execution requests, reviewed-wrapper refusal cases, run-record schema |
 | `workflow-templates` | Validate workflow templates | Schema, DAG consistency, plugin list structure, artifact handoff |
 | `biopilot-prototype` | Validate demo request and run records | Demo request schema and run-record schema against sample JSON |
+| `awesome-ai4s-workflows` | Validate landscape data | Project fields, assessment fields, duplicate names, project-assessment alignment |
 
 ## What is not ready yet
 
