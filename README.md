@@ -31,6 +31,7 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - Workflow review checklist: https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/workflow-review-checklist.md
 - Run record schema: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/schema/opensciflow-run-record.schema.json
 - BioPilot compliance plan: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/protocol-compliance-plan.md
+- BioPilot minimal runner contract: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/minimal-runner-contract.md
 - Model manifest backlog: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/model-manifest-backlog.md
 - Roadmap: https://github.com/OpenSciFlow/docs/blob/main/reference/roadmap.md
 - Protocol status matrix: https://github.com/OpenSciFlow/docs/blob/main/reference/protocol-status.md

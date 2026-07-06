@@ -16,7 +16,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Workflow DAG validation | `workflow-templates` | Step/DAG consistency checks | Draft structural validation |
 | Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 6 protein templates | Draft executable-structure validation |
 | Run record schema | `biopilot-prototype` | JSON Schema, sample run record, CI validation | Draft reproducibility record |
-| BioPilot prototype | `biopilot-prototype` | MVP runbook, API draft, sample-data policy, sample-data metadata template, protocol compliance plan | Prototype plan, not full implementation |
+| BioPilot prototype | `biopilot-prototype` | MVP runbook, API draft, demo request schema, sample-data policy, sample-data metadata template, protocol compliance plan | Prototype plan with validated request fixture |
 | Landscape map | `awesome-ai4s-workflows` | 83+ related projects | Correction-friendly map |
 | Position paper | `whitepaper` | position note and draft text | Framing draft |
 
@@ -27,7 +27,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | `plugin-manifest` | Validate plugin manifests | Schema, command placeholders, command-template guardrails, Slurm submit-command rendering fixtures |
 | `opensciflow-skill` | Validate skill fixtures | Skill input/output schemas, execution requests, reviewed-wrapper refusal cases, run-record schema |
 | `workflow-templates` | Validate workflow templates | Schema, DAG consistency, plugin list structure, artifact handoff |
-| `biopilot-prototype` | Validate run records | Run-record schema against sample JSON |
+| `biopilot-prototype` | Validate demo request and run records | Demo request schema and run-record schema against sample JSON |
 
 ## What is not ready yet
 
@@ -57,3 +57,4 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 - Reviewed-wrapper checklist: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/wrapper-review-checklist.md
 - Artifact handoff validation: https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/artifact-handoff-validation.md
 - BioPilot compliance plan: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/protocol-compliance-plan.md
+- BioPilot minimal runner contract: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/minimal-runner-contract.md
