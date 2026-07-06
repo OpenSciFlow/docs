@@ -14,6 +14,7 @@ As of 2026-07-06:
 - workflow template schema validates 5 protein workflow templates;
 - command-template placeholder validation exists for plugin examples;
 - DAG validation exists for workflow templates;
+- artifact handoff validation exists for the initial protein workflow templates;
 - BioPilot has a run-record schema and sample run-record validation;
 - public outreach is framed as correction requests, not partnership claims.
 
@@ -30,7 +31,7 @@ Priorities:
 - Move `mdanalysis-trajectory-analysis` toward `R3 dry-run ready`.
 - Record the exact dry-run environment and command output.
 - Add a small command-rendering test fixture for manifest placeholders.
-- Add workflow artifact handoff checks for `md-stability-analysis`.
+- Stress-test workflow artifact handoff checks for optional branches and fallback tools.
 - Decide the first public sample trajectory and verify license/citation metadata.
 - Use `reference/v0.2-rfc-outline.md` to keep protocol changes scoped.
 

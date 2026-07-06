@@ -12,6 +12,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Local-agent contract | `plugin-manifest` | Agent responsibilities and refusal rules | Draft execution contract |
 | Workflow template schema | `workflow-templates` | JSON Schema, 5 protein templates, CI validation | Draft v0.1 task templates |
 | Workflow DAG validation | `workflow-templates` | Step/DAG consistency checks | Draft structural validation |
+| Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 5 protein templates | Draft executable-structure validation |
 | Run record schema | `biopilot-prototype` | JSON Schema, sample run record, CI validation | Draft reproducibility record |
 | BioPilot prototype | `biopilot-prototype` | MVP runbook, API draft, sample-data policy | Prototype plan, not full implementation |
 | Landscape map | `awesome-ai4s-workflows` | 79+ related projects | Correction-friendly map |
@@ -22,7 +23,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Repository | CI check | Validates |
 |---|---|---|
 | `plugin-manifest` | Validate plugin manifests | Schema, command placeholders, command-template guardrails |
-| `workflow-templates` | Validate workflow templates | Schema, DAG consistency, plugin list structure |
+| `workflow-templates` | Validate workflow templates | Schema, DAG consistency, plugin list structure, artifact handoff |
 | `biopilot-prototype` | Validate run records | Run-record schema against sample JSON |
 
 ## What is not ready yet
@@ -38,7 +39,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 1. Record MDAnalysis dry-run evidence and move the manifest toward `R3`.
 2. Confirm sample-data provenance and hashes.
 3. Produce one validated BioPilot `run_manifest.json` from a public sample run.
-4. Add artifact handoff checks to workflow validation.
+4. Stress-test artifact handoff checks against optional branches and fallback tools.
 5. Draft v0.2 command-template and run-record RFC.
 
 ## Planning references
