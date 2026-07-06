@@ -22,3 +22,10 @@ Use these when reviewing task templates, report boundaries, example datasets, an
 ## Rule of thumb
 
 If a contribution makes execution easier, it should also make review, refusal, citation, and reproducibility clearer.
+
+## Run records
+
+- Run record spec: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/run-record-spec.md
+- Run record schema: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/schema/opensciflow-run-record.schema.json
+
+Use these when reviewing whether a workflow or local agent records enough information after execution.
