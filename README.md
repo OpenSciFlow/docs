@@ -13,6 +13,7 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - `reference/review-checklists.md`: direct links to current review checklists.
 - `reference/roadmap.md`: near-term roadmap from draft metadata toward executable evidence.
 - `reference/protocol-status.md`: current evidence and readiness matrix.
+- `reference/v0.2-rfc-outline.md`: decisions needed before an executable-contract RFC.
 - `reference/faq.md`: common questions.
 - `reference/glossary.md`: short definitions.
 
@@ -27,6 +28,7 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - Model manifest backlog: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/model-manifest-backlog.md
 - Roadmap: https://github.com/OpenSciFlow/docs/blob/main/reference/roadmap.md
 - Protocol status matrix: https://github.com/OpenSciFlow/docs/blob/main/reference/protocol-status.md
+- v0.2 RFC outline: https://github.com/OpenSciFlow/docs/blob/main/reference/v0.2-rfc-outline.md
 - Promotion kit: https://github.com/OpenSciFlow/community/blob/main/outreach/promotion-kit.md
 
 ## What is OpenSciFlow?

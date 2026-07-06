@@ -40,3 +40,9 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 3. Produce one validated BioPilot `run_manifest.json` from a public sample run.
 4. Add artifact handoff checks to workflow validation.
 5. Draft v0.2 command-template and run-record RFC.
+
+## Planning references
+
+- v0.2 RFC outline: `reference/v0.2-rfc-outline.md`
+- R3 evidence template: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/r3-evidence-template.md
+- Artifact handoff validation: https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/artifact-handoff-validation.md

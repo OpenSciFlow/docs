@@ -32,6 +32,7 @@ Priorities:
 - Add a small command-rendering test fixture for manifest placeholders.
 - Add workflow artifact handoff checks for `md-stability-analysis`.
 - Decide the first public sample trajectory and verify license/citation metadata.
+- Use `reference/v0.2-rfc-outline.md` to keep protocol changes scoped.
 
 ## Month 1
 
