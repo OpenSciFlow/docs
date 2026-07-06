@@ -14,7 +14,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Workflow DAG validation | `workflow-templates` | Step/DAG consistency checks | Draft structural validation |
 | Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 5 protein templates | Draft executable-structure validation |
 | Run record schema | `biopilot-prototype` | JSON Schema, sample run record, CI validation | Draft reproducibility record |
-| BioPilot prototype | `biopilot-prototype` | MVP runbook, API draft, sample-data policy, protocol compliance plan | Prototype plan, not full implementation |
+| BioPilot prototype | `biopilot-prototype` | MVP runbook, API draft, sample-data policy, sample-data metadata template, protocol compliance plan | Prototype plan, not full implementation |
 | Landscape map | `awesome-ai4s-workflows` | 79+ related projects | Correction-friendly map |
 | Position paper | `whitepaper` | position note and draft text | Framing draft |
 
@@ -32,7 +32,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 - No plugin is certified for scientific correctness.
 - `mdanalysis-trajectory-analysis` is not yet `R3`; one failed local dry-run attempt is recorded, and passing dry-run evidence is still missing.
 - BioPilot has not yet executed the full protein MD stability workflow.
-- Sample data is still a candidate until license, citation, size, and hashes are recorded.
+- Sample data is still a candidate until license, citation, size, and hashes are recorded with the metadata template.
 
 ## Next evidence targets
 

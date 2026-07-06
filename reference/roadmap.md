@@ -16,6 +16,7 @@ As of 2026-07-06:
 - DAG validation exists for workflow templates;
 - artifact handoff validation exists for the initial protein workflow templates;
 - BioPilot has a run-record schema and sample run-record validation;
+- BioPilot has a sample-data metadata template, but the candidate dataset is not finalized;
 - public outreach is framed as correction requests, not partnership claims.
 
 ## Next 2 weeks
@@ -32,7 +33,7 @@ Priorities:
 - Convert the recorded failed MDAnalysis dry-run attempt into passing R3 evidence in a documented environment.
 - Expand command-rendering fixtures for optional inputs and wrapper-script cases.
 - Stress-test workflow artifact handoff checks for optional branches and fallback tools.
-- Decide the first public sample trajectory and verify license/citation metadata.
+- Decide the first public sample trajectory and fill license, citation, size, and hash metadata.
 - Use `reference/v0.2-rfc-outline.md` to keep protocol changes scoped.
 
 ## Month 1
