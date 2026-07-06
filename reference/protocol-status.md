@@ -12,9 +12,9 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Local-agent contract | `plugin-manifest` | Agent responsibilities and refusal rules | Draft execution contract |
 | HPC/Slurm metadata | `plugin-manifest` | Portable Slurm field guide, submit-command fixture, and reviewed-wrapper metadata | Draft review guide |
 | OpenSciFlow Skill | `opensciflow-skill` | Skill spec, schemas, prompts, four examples, Slurm execution request, validation scripts, refusal tests | Early agent-adoption draft |
-| Workflow template schema | `workflow-templates` | JSON Schema, 5 protein templates, CI validation | Draft v0.1 task templates |
+| Workflow template schema | `workflow-templates` | JSON Schema, 6 protein templates, CI validation | Draft v0.1 task templates |
 | Workflow DAG validation | `workflow-templates` | Step/DAG consistency checks | Draft structural validation |
-| Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 5 protein templates | Draft executable-structure validation |
+| Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 6 protein templates | Draft executable-structure validation |
 | Run record schema | `biopilot-prototype` | JSON Schema, sample run record, CI validation | Draft reproducibility record |
 | BioPilot prototype | `biopilot-prototype` | MVP runbook, API draft, sample-data policy, sample-data metadata template, protocol compliance plan | Prototype plan, not full implementation |
 | Landscape map | `awesome-ai4s-workflows` | 83+ related projects | Correction-friendly map |
