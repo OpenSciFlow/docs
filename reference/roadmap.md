@@ -12,7 +12,7 @@ As of 2026-07-06:
 - landscape map includes 79+ related projects;
 - plugin manifest schema validates 7 example manifests;
 - workflow template schema validates 5 protein workflow templates;
-- command-template placeholder validation exists for plugin examples;
+- command-template placeholder validation and minimal rendering fixtures exist for plugin examples;
 - DAG validation exists for workflow templates;
 - artifact handoff validation exists for the initial protein workflow templates;
 - BioPilot has a run-record schema and sample run-record validation;
@@ -30,7 +30,7 @@ Priorities:
 
 - Move `mdanalysis-trajectory-analysis` toward `R3 dry-run ready`.
 - Convert the recorded failed MDAnalysis dry-run attempt into passing R3 evidence in a documented environment.
-- Add a small command-rendering test fixture for manifest placeholders.
+- Expand command-rendering fixtures for optional inputs and wrapper-script cases.
 - Stress-test workflow artifact handoff checks for optional branches and fallback tools.
 - Decide the first public sample trajectory and verify license/citation metadata.
 - Use `reference/v0.2-rfc-outline.md` to keep protocol changes scoped.

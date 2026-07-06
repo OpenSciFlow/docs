@@ -7,7 +7,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Artifact | Repository | Current evidence | Current status |
 |---|---|---|---|
 | Plugin manifest schema | `plugin-manifest` | JSON Schema, 7 example manifests, CI validation | Draft v0.1, reviewable metadata |
-| Command-template rules | `plugin-manifest` | Placeholder validation and disallowed shell-fragment checks | Draft v0.1 guardrail |
+| Command-template rules | `plugin-manifest` | Placeholder validation, disallowed shell-fragment checks, rendering fixtures | Draft v0.1 guardrail |
 | Readiness levels | `plugin-manifest` | R0-R6 document | Draft classification scheme |
 | Local-agent contract | `plugin-manifest` | Agent responsibilities and refusal rules | Draft execution contract |
 | Workflow template schema | `workflow-templates` | JSON Schema, 5 protein templates, CI validation | Draft v0.1 task templates |
@@ -22,7 +22,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 | Repository | CI check | Validates |
 |---|---|---|
-| `plugin-manifest` | Validate plugin manifests | Schema, command placeholders, command-template guardrails |
+| `plugin-manifest` | Validate plugin manifests | Schema, command placeholders, command-template guardrails, rendering fixtures |
 | `workflow-templates` | Validate workflow templates | Schema, DAG consistency, plugin list structure, artifact handoff |
 | `biopilot-prototype` | Validate run records | Run-record schema against sample JSON |
 
