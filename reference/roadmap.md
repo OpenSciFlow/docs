@@ -13,6 +13,7 @@ As of 2026-07-06:
 - plugin manifest schema validates 7 example manifests;
 - workflow template schema validates 5 protein workflow templates;
 - command-template placeholder validation and minimal rendering fixtures exist for plugin examples;
+- HPC/Slurm metadata has a first review guide, but no real cluster review has happened yet;
 - DAG validation exists for workflow templates;
 - artifact handoff validation exists for the initial protein workflow templates;
 - BioPilot has a run-record schema and sample run-record validation;
