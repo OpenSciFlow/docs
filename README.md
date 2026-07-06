@@ -13,6 +13,14 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - `reference/faq.md`: common questions.
 - `reference/glossary.md`: short definitions.
 
+## Protocol and outreach entry points
+
+- Plugin protocol roadmap: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/protocol-roadmap.md
+- Readiness levels: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/readiness-levels.md
+- Local agent contract: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/agent-contract.md
+- Model manifest backlog: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/model-manifest-backlog.md
+- Promotion kit: https://github.com/OpenSciFlow/community/blob/main/outreach/promotion-kit.md
+
 ## What is OpenSciFlow?
 
 OpenSciFlow is an early open initiative for modular, reproducible, local-first, and HPC-ready AI for Science workflows.
