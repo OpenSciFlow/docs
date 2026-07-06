@@ -11,6 +11,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Readiness levels | `plugin-manifest` | R0-R6 document | Draft classification scheme |
 | Local-agent contract | `plugin-manifest` | Agent responsibilities and refusal rules | Draft execution contract |
 | HPC/Slurm metadata | `plugin-manifest` | Portable Slurm field guide and review questions | Draft review guide |
+| OpenSciFlow Skill | `opensciflow-skill` | Skill spec, schemas, prompts, examples, validation scripts, refusal tests | Early agent-adoption draft |
 | Workflow template schema | `workflow-templates` | JSON Schema, 5 protein templates, CI validation | Draft v0.1 task templates |
 | Workflow DAG validation | `workflow-templates` | Step/DAG consistency checks | Draft structural validation |
 | Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 5 protein templates | Draft executable-structure validation |
@@ -24,6 +25,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Repository | CI check | Validates |
 |---|---|---|
 | `plugin-manifest` | Validate plugin manifests | Schema, command placeholders, command-template guardrails, rendering fixtures |
+| `opensciflow-skill` | Validate skill fixtures | Skill input/output schemas, execution-request refusal cases, run-record schema |
 | `workflow-templates` | Validate workflow templates | Schema, DAG consistency, plugin list structure, artifact handoff |
 | `biopilot-prototype` | Validate run records | Run-record schema against sample JSON |
 
@@ -48,5 +50,6 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 - v0.2 RFC outline: `reference/v0.2-rfc-outline.md`
 - R3 evidence template: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/r3-evidence-template.md
 - HPC/Slurm metadata guide: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/hpc-slurm-metadata.md
+- OpenSciFlow Skill: https://github.com/OpenSciFlow/opensciflow-skill
 - Artifact handoff validation: https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/artifact-handoff-validation.md
 - BioPilot compliance plan: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/protocol-compliance-plan.md
