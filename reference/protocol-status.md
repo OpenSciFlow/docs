@@ -49,6 +49,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 ## Planning references
 
 - v0.2 RFC outline: `reference/v0.2-rfc-outline.md`
+- Reviewed-wrapper RFC draft: `reference/v0.2-reviewed-wrapper-rfc.md`
 - R3 evidence template: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/r3-evidence-template.md
 - HPC/Slurm metadata guide: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/hpc-slurm-metadata.md
 - OpenSciFlow Skill: https://github.com/OpenSciFlow/opensciflow-skill

@@ -14,6 +14,7 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - `reference/roadmap.md`: near-term roadmap from draft metadata toward executable evidence.
 - `reference/protocol-status.md`: current evidence and readiness matrix.
 - `reference/v0.2-rfc-outline.md`: decisions needed before an executable-contract RFC.
+- `reference/v0.2-reviewed-wrapper-rfc.md`: draft RFC section for Slurm and reviewed wrapper scripts.
 - `reference/faq.md`: common questions.
 - `reference/glossary.md`: short definitions.
 
