@@ -7,10 +7,10 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Artifact | Repository | Current evidence | Current status |
 |---|---|---|---|
 | Plugin manifest schema | `plugin-manifest` | JSON Schema, 7 example manifests, CI validation | Draft v0.1, reviewable metadata |
-| Command-template rules | `plugin-manifest` | Placeholder validation, disallowed shell-fragment checks, rendering fixtures | Draft v0.1 guardrail |
+| Command-template rules | `plugin-manifest` | Placeholder validation, `{run_directory}` support, disallowed shell-fragment checks, rendering fixtures | Draft v0.1 guardrail |
 | Readiness levels | `plugin-manifest` | R0-R6 document | Draft classification scheme |
 | Local-agent contract | `plugin-manifest` | Agent responsibilities and refusal rules | Draft execution contract |
-| HPC/Slurm metadata | `plugin-manifest` | Portable Slurm field guide and review questions | Draft review guide |
+| HPC/Slurm metadata | `plugin-manifest` | Portable Slurm field guide, submit-command fixture, and reviewed-wrapper metadata | Draft review guide |
 | OpenSciFlow Skill | `opensciflow-skill` | Skill spec, schemas, prompts, four examples, Slurm execution request, validation scripts, refusal tests | Early agent-adoption draft |
 | Workflow template schema | `workflow-templates` | JSON Schema, 5 protein templates, CI validation | Draft v0.1 task templates |
 | Workflow DAG validation | `workflow-templates` | Step/DAG consistency checks | Draft structural validation |
@@ -24,7 +24,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 | Repository | CI check | Validates |
 |---|---|---|
-| `plugin-manifest` | Validate plugin manifests | Schema, command placeholders, command-template guardrails, rendering fixtures |
+| `plugin-manifest` | Validate plugin manifests | Schema, command placeholders, command-template guardrails, Slurm submit-command rendering fixtures |
 | `opensciflow-skill` | Validate skill fixtures | Skill input/output schemas, execution requests, reviewed-wrapper refusal cases, run-record schema |
 | `workflow-templates` | Validate workflow templates | Schema, DAG consistency, plugin list structure, artifact handoff |
 | `biopilot-prototype` | Validate run records | Run-record schema against sample JSON |
@@ -43,7 +43,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 2. Confirm sample-data provenance and hashes.
 3. Produce one validated BioPilot `run_manifest.json` from a public sample run.
 4. Stress-test artifact handoff checks against optional branches and fallback tools.
-5. Align `opensciflow-skill` execution-request fields with plugin-manifest command-template fields.
+5. Add a second Slurm reviewed-wrapper example outside GROMACS to test generality.
 6. Draft v0.2 command-template and run-record RFC.
 
 ## Planning references
