@@ -11,6 +11,7 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - `tutorials/first-md-stability-run.md`: first planned reference demo.
 - `reference/contribution-routes.md`: where different contributors should start.
 - `reference/review-checklists.md`: direct links to current review checklists.
+- `reference/roadmap.md`: near-term roadmap from draft metadata toward executable evidence.
 - `reference/faq.md`: common questions.
 - `reference/glossary.md`: short definitions.
 
@@ -23,6 +24,7 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - Workflow review checklist: https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/workflow-review-checklist.md
 - Run record schema: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/schema/opensciflow-run-record.schema.json
 - Model manifest backlog: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/model-manifest-backlog.md
+- Roadmap: https://github.com/OpenSciFlow/docs/blob/main/reference/roadmap.md
 - Promotion kit: https://github.com/OpenSciFlow/community/blob/main/outreach/promotion-kit.md
 
 ## What is OpenSciFlow?
