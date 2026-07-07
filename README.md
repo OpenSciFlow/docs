@@ -10,6 +10,8 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - `concepts/reproducibility.md`: what each run should record.
 - `tutorials/first-md-stability-run.md`: first planned reference demo.
 - `reference/contribution-routes.md`: where different contributors should start.
+- `reference/what-is-opensciflow.md`: concise project definition.
+- `reference/what-this-is-not.md`: boundary and non-goal statement.
 - `reference/review-checklists.md`: direct links to current review checklists.
 - `reference/roadmap.md`: near-term roadmap from draft metadata toward executable evidence.
 - `reference/protocol-status.md`: current evidence and readiness matrix.
