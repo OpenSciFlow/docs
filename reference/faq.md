@@ -23,3 +23,7 @@ No. It records execution metadata, citations, licenses, artifacts, and limitatio
 ## Why use normalized scheduler fields?
 
 OpenSciFlow-facing files use fields such as `time_limit`, `cpu_cores`, `memory_gb`, and `gpu_resources`. A reviewed wrapper maps them to Slurm-specific options such as `--time`, `--cpus-per-task`, `--mem`, and `--gres`.
+
+## Why are some fields required even when they are not applicable?
+
+Because missing metadata is ambiguous. A manifest should say `not-applicable`, `user-provided`, `unknown`, or `to-be-filled` instead of silently omitting execution-relevant information.

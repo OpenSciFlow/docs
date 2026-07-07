@@ -37,7 +37,7 @@
 - module 或 container 是否明确？
 - stdout / stderr 路径是否明确？
 - wrapper script 是否已 review？
-- wrapper 是否只填充允许的参数？
+- wrapper 是否只填入允许的参数？
 
 ## 结果解释检查
 
@@ -45,4 +45,3 @@
 - 是否避免临床、诊断、药效或生物功能断言？
 - 是否说明模型适用范围？
 - 是否说明输入数据和环境限制？
-

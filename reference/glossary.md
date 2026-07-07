@@ -6,6 +6,7 @@
 - Command template: reviewed command string declared in a manifest or workflow template.
 - Execution request: structured record of the exact command or reviewed wrapper submission an agent proposes to run.
 - Local Agent: local executor for approved workflow commands.
+- Manifest field policy: rule that execution, license, citation, hardware, model-weight, reproducibility, safety, and limitation fields should be explicit rather than omitted.
 - Manifest-first: design principle that tools and models should declare inputs, outputs, environment, weights, citation, license, and limitations before execution.
 - Model weights: files or checkpoints required by an AI model.
 - OpenSciFlow Skill: agent-facing adapter layer for manifests, workflow templates, execution requests, refusal rules, and run records.

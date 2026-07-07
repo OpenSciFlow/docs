@@ -15,6 +15,7 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - `reference/review-checklists.md`: direct links to current review checklists.
 - `reference/roadmap.md`: near-term roadmap from draft metadata toward executable evidence.
 - `reference/protocol-status.md`: current evidence and readiness matrix.
+- `reference/manifest-field-policy.md`: why key manifest fields must be explicit.
 - `reference/v0.2-rfc-outline.md`: decisions needed before an executable-contract RFC.
 - `reference/v0.2-reviewed-wrapper-rfc.md`: draft RFC section for Slurm and reviewed wrapper scripts.
 - `reference/faq.md`: common questions.
@@ -30,6 +31,7 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - Local agent contract: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/agent-contract.md
 - Manifest review checklist: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/manifest-review-checklist.md
 - License and citation policy: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/license-and-citation.md
+- Required vs optional manifest fields: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/required-vs-optional-fields.md
 - OpenSciFlow Skill: https://github.com/OpenSciFlow/opensciflow-skill
 - OpenSciFlow Skill schema mapping: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/schema-mapping.md
 - OpenSciFlow Skill run-record alignment: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/run-record-alignment.md
