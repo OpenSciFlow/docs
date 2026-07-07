@@ -17,6 +17,8 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - `reference/v0.2-reviewed-wrapper-rfc.md`: draft RFC section for Slurm and reviewed wrapper scripts.
 - `reference/faq.md`: common questions.
 - `reference/glossary.md`: short definitions.
+- `zh/README.md`: Chinese documentation entry point.
+- `zh/quick-check.md`: Chinese quick review checklist.
 
 ## Protocol and outreach entry points
 
