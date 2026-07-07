@@ -26,6 +26,7 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - Readiness levels: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/readiness-levels.md
 - Local agent contract: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/agent-contract.md
 - Manifest review checklist: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/manifest-review-checklist.md
+- License and citation policy: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/license-and-citation.md
 - OpenSciFlow Skill: https://github.com/OpenSciFlow/opensciflow-skill
 - OpenSciFlow Skill schema mapping: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/schema-mapping.md
 - OpenSciFlow Skill run-record alignment: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/run-record-alignment.md
