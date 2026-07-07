@@ -19,6 +19,14 @@ Use these when reviewing `opensciflow.yaml` files.
 
 Use these when reviewing task templates, report boundaries, example datasets, and workflow reproducibility.
 
+## Agent skill behavior
+
+- Coding-agent behavior review: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/coding-agent-behavior-review.md
+- Refusal policy: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/refusal-policy.md
+- Wrapper review checklist: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/wrapper-review-checklist.md
+
+Use these when reviewing whether an AI agent should plan, refuse, dry-run, execute, or write a run record.
+
 ## Rule of thumb
 
 If a contribution makes execution easier, it should also make review, refusal, citation, and reproducibility clearer.
