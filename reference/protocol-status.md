@@ -12,9 +12,10 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Local-agent contract | `plugin-manifest` | Agent responsibilities and refusal rules | Draft execution contract |
 | HPC/Slurm metadata | `plugin-manifest` | Portable Slurm field guide, submit-command fixture, and reviewed-wrapper metadata | Draft review guide |
 | OpenSciFlow Skill | `opensciflow-skill` | Skill spec, schemas, prompts, five examples, GROMACS and MACE Slurm execution requests, BioPilot run-record crosswalk, coding-agent behavior review, validation scripts, refusal tests | Early agent-adoption draft |
-| Workflow template schema | `workflow-templates` | JSON Schema, 7 protein/materials templates, CI validation | Draft v0.1 task templates |
+| Workflow template schema | `workflow-templates` | JSON Schema, 7 protein/materials templates, CI validation, protein-template review matrix | Draft v0.1 task templates |
 | Workflow DAG validation | `workflow-templates` | Step/DAG consistency checks | Draft structural validation |
 | Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 7 protein/materials templates | Draft executable-structure validation |
+| Workflow reproducibility policy | `workflow-templates` | Validator checks input hashes, tool versions, commands, environment, report template, example-data status/license, and limitations | Draft run-record readiness guardrail |
 | Run record schema | `biopilot-prototype` | JSON Schema, sample run record, CI validation | Draft reproducibility record |
 | BioPilot prototype | `biopilot-prototype` | MVP runbook, API draft, demo request schema, plan-response schema, artifact-resolution schema, read-only manifest/workflow loader, sample-data policy, sample-data metadata template, protocol compliance plan | Prototype plan with validated request, blocked planning fixture, and resolved protocol-artifact summary |
 | Landscape map | `awesome-ai4s-workflows` | 83 related projects, 83 assessment records, CI validation | Correction-friendly map |
@@ -60,6 +61,8 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 - Skill coding-agent behavior review: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/coding-agent-behavior-review.md
 - Reviewed-wrapper checklist: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/wrapper-review-checklist.md
 - Artifact handoff validation: https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/artifact-handoff-validation.md
+- Workflow reproducibility validation: https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/reproducibility-validation.md
+- Protein template review matrix: https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/protein-template-review-matrix.md
 - BioPilot compliance plan: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/protocol-compliance-plan.md
 - BioPilot minimal runner contract: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/minimal-runner-contract.md
 - BioPilot manifest/workflow loading: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/manifest-workflow-loading.md
