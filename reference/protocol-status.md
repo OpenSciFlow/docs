@@ -7,14 +7,14 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Artifact | Repository | Current evidence | Current status |
 |---|---|---|---|
 | Plugin manifest schema | `plugin-manifest` | JSON Schema, 7 example manifests, CI validation | Draft v0.1, reviewable metadata |
-| Command-template rules | `plugin-manifest` | Placeholder validation, `{run_directory}` support, disallowed shell-fragment checks, rendering fixtures | Draft v0.1 guardrail |
+| Command-template rules | `plugin-manifest` | Placeholder validation, `{run_directory}` support, normalized scheduler fields, disallowed shell-fragment checks, rendering fixtures | Draft v0.1 guardrail |
 | Readiness levels | `plugin-manifest` | R0-R6 document | Draft classification scheme |
 | Local-agent contract | `plugin-manifest` | Agent responsibilities and refusal rules | Draft execution contract |
 | HPC/Slurm metadata | `plugin-manifest` | Portable Slurm field guide, submit-command fixture, and reviewed-wrapper metadata | Draft review guide |
-| OpenSciFlow Skill | `opensciflow-skill` | Skill spec, schemas, prompts, four examples, Slurm execution request, validation scripts, refusal tests | Early agent-adoption draft |
-| Workflow template schema | `workflow-templates` | JSON Schema, 6 protein templates, CI validation | Draft v0.1 task templates |
+| OpenSciFlow Skill | `opensciflow-skill` | Skill spec, schemas, prompts, five examples, GROMACS and MACE Slurm execution requests, validation scripts, refusal tests | Early agent-adoption draft |
+| Workflow template schema | `workflow-templates` | JSON Schema, 7 protein/materials templates, CI validation | Draft v0.1 task templates |
 | Workflow DAG validation | `workflow-templates` | Step/DAG consistency checks | Draft structural validation |
-| Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 6 protein templates | Draft executable-structure validation |
+| Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 7 protein/materials templates | Draft executable-structure validation |
 | Run record schema | `biopilot-prototype` | JSON Schema, sample run record, CI validation | Draft reproducibility record |
 | BioPilot prototype | `biopilot-prototype` | MVP runbook, API draft, demo request schema, sample-data policy, sample-data metadata template, protocol compliance plan | Prototype plan with validated request fixture |
 | Landscape map | `awesome-ai4s-workflows` | 83 related projects, 83 assessment records, CI validation | Correction-friendly map |
@@ -44,7 +44,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 2. Confirm sample-data provenance and hashes.
 3. Produce one validated BioPilot `run_manifest.json` from a public sample run.
 4. Stress-test artifact handoff checks against optional branches and fallback tools.
-5. Add a second Slurm reviewed-wrapper example outside GROMACS to test generality.
+5. Review the second Slurm reviewed-wrapper example outside GROMACS against real materials/HPC practice.
 6. Draft v0.2 command-template and run-record RFC.
 
 ## Planning references
