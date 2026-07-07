@@ -16,7 +16,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Workflow DAG validation | `workflow-templates` | Step/DAG consistency checks | Draft structural validation |
 | Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 7 protein/materials templates | Draft executable-structure validation |
 | Run record schema | `biopilot-prototype` | JSON Schema, sample run record, CI validation | Draft reproducibility record |
-| BioPilot prototype | `biopilot-prototype` | MVP runbook, API draft, demo request schema, plan-response schema, sample-data policy, sample-data metadata template, protocol compliance plan | Prototype plan with validated request and blocked planning fixture |
+| BioPilot prototype | `biopilot-prototype` | MVP runbook, API draft, demo request schema, plan-response schema, artifact-resolution schema, read-only manifest/workflow loader, sample-data policy, sample-data metadata template, protocol compliance plan | Prototype plan with validated request, blocked planning fixture, and resolved protocol-artifact summary |
 | Landscape map | `awesome-ai4s-workflows` | 83 related projects, 83 assessment records, CI validation | Correction-friendly map |
 | Position paper | `whitepaper` | position note and draft text | Framing draft |
 
@@ -62,4 +62,5 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 - Artifact handoff validation: https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/artifact-handoff-validation.md
 - BioPilot compliance plan: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/protocol-compliance-plan.md
 - BioPilot minimal runner contract: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/minimal-runner-contract.md
+- BioPilot manifest/workflow loading: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/manifest-workflow-loading.md
 - BioPilot Skill projection note: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/skill-run-record-projection.md
