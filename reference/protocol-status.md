@@ -11,7 +11,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Readiness levels | `plugin-manifest` | R0-R6 document | Draft classification scheme |
 | Local-agent contract | `plugin-manifest` | Agent responsibilities and refusal rules | Draft execution contract |
 | HPC/Slurm metadata | `plugin-manifest` | Portable Slurm field guide, submit-command fixture, and reviewed-wrapper metadata | Draft review guide |
-| OpenSciFlow Skill | `opensciflow-skill` | Skill spec, schemas, prompts, five examples, GROMACS and MACE Slurm execution requests, validation scripts, refusal tests | Early agent-adoption draft |
+| OpenSciFlow Skill | `opensciflow-skill` | Skill spec, schemas, prompts, five examples, GROMACS and MACE Slurm execution requests, BioPilot run-record crosswalk, validation scripts, refusal tests | Early agent-adoption draft |
 | Workflow template schema | `workflow-templates` | JSON Schema, 7 protein/materials templates, CI validation | Draft v0.1 task templates |
 | Workflow DAG validation | `workflow-templates` | Step/DAG consistency checks | Draft structural validation |
 | Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 7 protein/materials templates | Draft executable-structure validation |
@@ -25,7 +25,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Repository | CI check | Validates |
 |---|---|---|
 | `plugin-manifest` | Validate plugin manifests | Schema, command placeholders, command-template guardrails, Slurm submit-command rendering fixtures |
-| `opensciflow-skill` | Validate skill fixtures | Skill input/output schemas, execution requests, reviewed-wrapper refusal cases, run-record schema |
+| `opensciflow-skill` | Validate skill fixtures | Skill input/output schemas, execution requests, reviewed-wrapper refusal cases, run-record schema, BioPilot run-record crosswalk |
 | `workflow-templates` | Validate workflow templates | Schema, DAG consistency, plugin list structure, artifact handoff |
 | `biopilot-prototype` | Validate demo request and run records | Demo request schema and run-record schema against sample JSON |
 | `awesome-ai4s-workflows` | Validate landscape data | Project fields, assessment fields, duplicate names, project-assessment alignment |
@@ -55,6 +55,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 - HPC/Slurm metadata guide: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/hpc-slurm-metadata.md
 - OpenSciFlow Skill: https://github.com/OpenSciFlow/opensciflow-skill
 - Skill schema mapping: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/schema-mapping.md
+- Skill run-record alignment: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/run-record-alignment.md
 - Reviewed-wrapper checklist: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/wrapper-review-checklist.md
 - Artifact handoff validation: https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/artifact-handoff-validation.md
 - BioPilot compliance plan: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/protocol-compliance-plan.md
