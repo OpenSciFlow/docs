@@ -7,7 +7,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 | Artifact | Repository | Current evidence | Current status |
 |---|---|---|---|
 | Plugin manifest schema | `plugin-manifest` | JSON Schema, 7 example manifests, license/citation checks, CI validation | Draft v0.1, reviewable metadata |
-| Command-template rules | `plugin-manifest` | Placeholder validation, `{run_directory}` support, normalized scheduler fields, disallowed shell-fragment checks, rendering fixtures | Draft v0.1 guardrail |
+| Command-template rules | `plugin-manifest` | Placeholder validation, `{run_directory}` support, normalized scheduler fields, reviewed-wrapper metadata validation, disallowed shell-fragment checks, rendering fixtures | Draft v0.1 guardrail |
 | Readiness and validation levels | `plugin-manifest` | R0-R6 readiness levels, V1-V7 validation levels | Draft evidence classification scheme |
 | Local-agent contract | `plugin-manifest` | Agent responsibilities and refusal rules | Draft execution contract |
 | HPC/Slurm metadata | `plugin-manifest` | Portable Slurm field guide, submit-command fixture, and reviewed-wrapper metadata | Draft review guide |
@@ -55,6 +55,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 - R3 evidence template: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/r3-evidence-template.md
 - Validation levels: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/validation-levels.md
 - HPC/Slurm metadata guide: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/hpc-slurm-metadata.md
+- Reviewed-wrapper field rules: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/reviewed-wrapper-fields.md
 - OpenSciFlow Skill: https://github.com/OpenSciFlow/opensciflow-skill
 - Skill schema mapping: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/schema-mapping.md
 - Skill run-record alignment: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/run-record-alignment.md

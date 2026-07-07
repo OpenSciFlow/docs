@@ -31,6 +31,7 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 - Local agent contract: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/agent-contract.md
 - Manifest review checklist: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/manifest-review-checklist.md
 - License and citation policy: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/license-and-citation.md
+- Reviewed-wrapper field rules: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/reviewed-wrapper-fields.md
 - Required vs optional manifest fields: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/required-vs-optional-fields.md
 - OpenSciFlow Skill: https://github.com/OpenSciFlow/opensciflow-skill
 - OpenSciFlow Skill schema mapping: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/schema-mapping.md
