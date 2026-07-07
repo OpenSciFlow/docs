@@ -8,7 +8,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 |---|---|---|---|
 | Plugin manifest schema | `plugin-manifest` | JSON Schema, 7 example manifests, license/citation checks, CI validation | Draft v0.1, reviewable metadata |
 | Command-template rules | `plugin-manifest` | Placeholder validation, `{run_directory}` support, normalized scheduler fields, disallowed shell-fragment checks, rendering fixtures | Draft v0.1 guardrail |
-| Readiness levels | `plugin-manifest` | R0-R6 document | Draft classification scheme |
+| Readiness and validation levels | `plugin-manifest` | R0-R6 readiness levels, V1-V7 validation levels | Draft evidence classification scheme |
 | Local-agent contract | `plugin-manifest` | Agent responsibilities and refusal rules | Draft execution contract |
 | HPC/Slurm metadata | `plugin-manifest` | Portable Slurm field guide, submit-command fixture, and reviewed-wrapper metadata | Draft review guide |
 | OpenSciFlow Skill | `opensciflow-skill` | Skill spec, schemas, prompts, five examples, GROMACS and MACE Slurm execution requests, BioPilot run-record crosswalk, validation scripts, refusal tests | Early agent-adoption draft |
@@ -52,6 +52,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 - v0.2 RFC outline: `reference/v0.2-rfc-outline.md`
 - Reviewed-wrapper RFC draft: `reference/v0.2-reviewed-wrapper-rfc.md`
 - R3 evidence template: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/r3-evidence-template.md
+- Validation levels: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/validation-levels.md
 - HPC/Slurm metadata guide: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/hpc-slurm-metadata.md
 - OpenSciFlow Skill: https://github.com/OpenSciFlow/opensciflow-skill
 - Skill schema mapping: https://github.com/OpenSciFlow/opensciflow-skill/blob/main/docs/schema-mapping.md

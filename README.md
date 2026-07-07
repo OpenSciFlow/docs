@@ -24,6 +24,7 @@ User and contributor documentation for the OpenSciFlow initiative and BioPilot r
 
 - Plugin protocol roadmap: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/protocol-roadmap.md
 - Readiness levels: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/readiness-levels.md
+- Validation levels: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/validation-levels.md
 - Local agent contract: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/agent-contract.md
 - Manifest review checklist: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/manifest-review-checklist.md
 - License and citation policy: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/license-and-citation.md
