@@ -6,7 +6,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 | Artifact | Repository | Current evidence | Current status |
 |---|---|---|---|
-| Verified execution capsule registry | `verified-capsules` | Initial GROMACS RMSD capsule skeleton, capsule schemas, environment-spec schema, run-record schema, verified-env schema, known-failure schema | Early skeleton; no verified runs claimed yet |
+| Verified execution capsule registry | `verified-capsules` | One MDAnalysis RMSD R5 capsule with tiny example output and run record; one GROMACS RMSD R3 skeleton; capsule schemas, environment-spec schema, run-record schema, verified-env schema, known-failure schema | First real R5 evidence exists; no cross-environment claim yet |
 | Plugin manifest schema | `plugin-manifest` | JSON Schema, 7 example manifests, license/citation checks, CI validation | Draft v0.1, reviewable metadata |
 | Command-template rules | `plugin-manifest` | Placeholder validation, `{run_directory}` support, normalized scheduler fields, reviewed-wrapper metadata validation, disallowed shell-fragment checks, rendering fixtures | Draft v0.1 guardrail |
 | Readiness and validation levels | `plugin-manifest` | R0-R7 readiness levels, V1-V7 validation levels | Draft evidence classification scheme |
@@ -26,7 +26,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 | Repository | CI check | Validates |
 |---|---|---|
-| `verified-capsules` | Validate capsule skeletons | Capsule structure, manifest, environment spec, command templates, smoke-test metadata, run-record schema, verified-env matrix, known-failure records |
+| `verified-capsules` | Validate capsule skeletons and recorded examples | Capsule structure, manifest, environment spec, command templates, smoke-test metadata, run-record schema, verified-env matrix, known-failure records |
 | `plugin-manifest` | Validate plugin manifests | Schema, command placeholders, command-template guardrails, license/citation metadata, Slurm submit-command rendering fixtures |
 | `opensciflow-skill` | Validate skill fixtures | Skill input/output schemas, execution requests, reviewed-wrapper refusal cases, run-record schema, BioPilot run-record crosswalk |
 | `workflow-templates` | Validate workflow templates | Schema, DAG consistency, plugin list structure, artifact handoff |
@@ -38,17 +38,18 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 - No manifest should be treated as a stable standard.
 - No plugin is certified for scientific correctness.
 - No capsule should be described as portable beyond its verified environment matrix.
+- `mdanalysis-rmsd` is R5 only for the recorded tiny local Windows/Python/MDAnalysis example; it is not R6.
 - `mdanalysis-trajectory-analysis` still needs updated evidence under the R0-R7 readiness model.
 - BioPilot has not yet executed the full protein MD stability workflow.
 - Sample data is still a candidate until license, citation, size, and hashes are recorded with the metadata template.
 
 ## Next evidence targets
 
-1. Convert one successful run trajectory into a complete GROMACS RMSD capsule.
-2. Record smoke-test evidence and move the GROMACS RMSD capsule toward `R4`.
-3. Produce one validated example run record and move it toward `R5`.
-4. Confirm sample-data provenance, license, citation, size, and hashes.
-5. Stress-test artifact handoff checks against optional branches and fallback tools.
+1. Stabilize `mdanalysis-rmsd` as the first compact R5 capsule.
+2. Re-run `mdanalysis-rmsd` on Linux/Conda or container and move it toward `R6` only if evidence passes.
+3. Record smoke-test evidence and move the GROMACS RMSD capsule toward `R4`.
+4. Confirm sample-data provenance, license, citation, size, and hashes for future capsules.
+5. Add standards crosswalk exports only after capsule evidence is stable.
 6. Review one Slurm reviewed-wrapper example against real HPC practice.
 7. Draft v0.2 capsule, command-template, verified-env, and run-record RFC.
 
@@ -56,6 +57,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 - v0.2 RFC outline: `reference/v0.2-rfc-outline.md`
 - Verified capsules: https://github.com/OpenSciFlow/verified-capsules
+- Standards crosswalk: `reference/standards-crosswalk.md`
 - Reviewed-wrapper RFC draft: `reference/v0.2-reviewed-wrapper-rfc.md`
 - R3 evidence template: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/r3-evidence-template.md
 - Validation levels: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/validation-levels.md

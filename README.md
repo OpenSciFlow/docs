@@ -12,6 +12,7 @@ It is a check-before-run and record-after-run framework for AI for Science tool 
 - `trajectory-to-skill.md`: how successful run trajectories can become reusable tool skills.
 - `readiness-levels.md`: R0-R7 readiness levels and what each level allows.
 - `known-failures.md`: how to record failure cases without hiding them.
+- `reference/standards-crosswalk.md`: how OpenSciFlow should align with CWL, RO-Crate, workflow engines, and MCP.
 - `concepts/plugin.md`: what a plugin manifest is.
 - `concepts/workflow-template.md`: what a workflow template is.
 - `concepts/local-agent.md`: how local execution works.
@@ -19,6 +20,7 @@ It is a check-before-run and record-after-run framework for AI for Science tool 
 - `tutorials/first-md-stability-run.md`: first planned reference demo.
 - `reference/contribution-routes.md`: where different contributors should start.
 - `reference/protocol-status.md`: current evidence and readiness matrix.
+- `reference/strategic-pivot-2026-07-08.md`: why the next phase prioritizes R5/R6 evidence over more broad expansion.
 - `reference/review-checklists.md`: direct links to current review checklists.
 - `zh/README.md`: Chinese documentation entry point.
 - `zh/quick-check.md`: Chinese quick review checklist.
@@ -69,6 +71,7 @@ The practical goal is to make tool execution explicit, checkable, diagnosable, a
 - BioPilot manifest/workflow loading: https://github.com/OpenSciFlow/biopilot-prototype/blob/main/docs/manifest-workflow-loading.md
 - Workflow reproducibility validation: https://github.com/OpenSciFlow/workflow-templates/blob/main/docs/reproducibility-validation.md
 - Verified capsule registry: https://github.com/OpenSciFlow/verified-capsules
+- Standards crosswalk: https://github.com/OpenSciFlow/docs/blob/main/reference/standards-crosswalk.md
 
 ## BioPilot Relationship
 
