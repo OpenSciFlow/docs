@@ -6,7 +6,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 | Artifact | Repository | Current evidence | Current status |
 |---|---|---|---|
-| Verified execution capsule registry | `verified-capsules` | One MDAnalysis RMSD R6 capsule with tiny example outputs across local Windows and GitHub Actions Ubuntu; one GROMACS RMSD R4 smoke-tested capsule with a blocked local Windows record; capsule schemas, environment-spec schema, run-record schema, verified-env schema, known-failure schema | First narrow R6 evidence exists for a tiny example; GROMACS has R4 smoke evidence but no R5 RMSD run |
+| Verified execution capsule registry | `verified-capsules` | One MDAnalysis RMSD R6 capsule with tiny example outputs across local Windows and GitHub Actions Ubuntu; one GROMACS RMSD R5 capsule with a tiny GitHub Actions Ubuntu example run and a blocked local Windows record; capsule schemas, environment-spec schema, run-record schema, verified-env schema, known-failure schema; installable `opensciflow-capsule` CLI | First narrow R6 evidence exists for a tiny MDAnalysis example; GROMACS has narrow R5 evidence for the tiny synthetic example but no R6 claim |
 | Plugin manifest schema | `plugin-manifest` | JSON Schema, 7 example manifests, license/citation checks, CI validation | Draft v0.1, reviewable metadata |
 | Command-template rules | `plugin-manifest` | Placeholder validation, `{run_directory}` support, normalized scheduler fields, reviewed-wrapper metadata validation, disallowed shell-fragment checks, rendering fixtures | Draft v0.1 guardrail |
 | Readiness and validation levels | `plugin-manifest` | R0-R7 readiness levels, V1-V7 validation levels | Draft evidence classification scheme |
@@ -26,7 +26,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 | Repository | CI check | Validates |
 |---|---|---|
-| `verified-capsules` | Validate capsule skeletons and recorded examples | Capsule structure, manifest, environment spec, command templates, smoke-test metadata, run-record schema, verified-env matrix, known-failure records |
+| `verified-capsules` | Validate capsule skeletons, recorded examples, and CLI tests | Capsule structure, manifest, environment spec, command templates, smoke-test metadata, run-record schema, verified-env matrix, known-failure records, installable `opensciflow-capsule` CLI |
 | `plugin-manifest` | Validate plugin manifests | Schema, command placeholders, command-template guardrails, license/citation metadata, Slurm submit-command rendering fixtures |
 | `opensciflow-skill` | Validate skill fixtures | Skill input/output schemas, execution requests, reviewed-wrapper refusal cases, run-record schema, BioPilot run-record crosswalk |
 | `workflow-templates` | Validate workflow templates | Schema, DAG consistency, plugin list structure, artifact handoff |
@@ -39,7 +39,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 - No plugin is certified for scientific correctness.
 - No capsule should be described as portable beyond its verified environment matrix.
 - `mdanalysis-rmsd` is R6 only for the recorded tiny example across local Windows and GitHub Actions Ubuntu; it does not imply large-trajectory, HPC, GPU, or container portability.
-- `gromacs-rmsd` has R4 GitHub Actions Ubuntu smoke evidence for `gmx --version`, plus a blocked local Windows readiness record because `gmx` is not available on PATH. It is not R5.
+- `gromacs-rmsd` is R5 only for the recorded tiny synthetic PDB example on GitHub Actions Ubuntu. It also has a blocked local Windows readiness record because `gmx` is not available on PATH. It is not R6 and does not imply large-trajectory, HPC, GPU, or multi-environment portability.
 - `mdanalysis-trajectory-analysis` still needs updated evidence under the R0-R7 readiness model.
 - BioPilot has not yet executed the full protein MD stability workflow.
 - Sample data is still a candidate until license, citation, size, and hashes are recorded with the metadata template.
@@ -48,7 +48,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 1. Stabilize `mdanalysis-rmsd` as the first compact R6 capsule.
 2. Add a durable crosswalk export for the `mdanalysis-rmsd` run record after the R6 evidence remains stable.
-3. Add a tiny GROMACS input/trajectory pair and move the GROMACS RMSD capsule toward `R5` only after a real RMSD example run record exists.
+3. Move the GROMACS RMSD capsule toward `R6` only after at least one additional verified environment or external reproduction exists.
 4. Confirm sample-data provenance, license, citation, size, and hashes for future capsules.
 5. Add standards crosswalk exports only after capsule evidence is stable.
 6. Review one Slurm reviewed-wrapper example against real HPC practice.
@@ -58,6 +58,8 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 - v0.2 RFC outline: `reference/v0.2-rfc-outline.md`
 - Verified capsules: https://github.com/OpenSciFlow/verified-capsules
+- Verified Capsules product quickstart: https://github.com/OpenSciFlow/verified-capsules/blob/main/docs/product-quickstart.md
+- Verified Capsules release checklist: https://github.com/OpenSciFlow/verified-capsules/blob/main/docs/release-checklist.md
 - Standards crosswalk: `reference/standards-crosswalk.md`
 - Reviewed-wrapper RFC draft: `reference/v0.2-reviewed-wrapper-rfc.md`
 - R3 evidence template: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/r3-evidence-template.md
