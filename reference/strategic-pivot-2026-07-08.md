@@ -32,7 +32,7 @@ Broad manifest drafts are useful, but they do not prove execution value.
 
 ## Immediate Targets
 
-- Keep `mdanalysis-rmsd` as the compact R5 reference.
+- Keep `mdanalysis-rmsd` as the compact R6 reference, with a strict tiny-example boundary.
 - Move `gromacs-rmsd` from R3 skeleton to R4 smoke-test evidence.
 - Attempt one second environment for `mdanalysis-rmsd` only when the environment is real and recorded.
 - Add cross-standard export notes after evidence stabilizes.
