@@ -6,7 +6,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 | Artifact | Repository | Current evidence | Current status |
 |---|---|---|---|
-| Verified execution capsule registry | `verified-capsules` | One MDAnalysis RMSD R5 capsule with tiny example output and run record; one GROMACS RMSD R3 skeleton; capsule schemas, environment-spec schema, run-record schema, verified-env schema, known-failure schema | First real R5 evidence exists; no cross-environment claim yet |
+| Verified execution capsule registry | `verified-capsules` | One MDAnalysis RMSD R5 capsule with tiny example outputs and run records from local venv and local Conda environments; one GROMACS RMSD R3 skeleton with a blocked local readiness record; capsule schemas, environment-spec schema, run-record schema, verified-env schema, known-failure schema | Local R5 evidence exists; no R6 cross-environment claim yet |
 | Plugin manifest schema | `plugin-manifest` | JSON Schema, 7 example manifests, license/citation checks, CI validation | Draft v0.1, reviewable metadata |
 | Command-template rules | `plugin-manifest` | Placeholder validation, `{run_directory}` support, normalized scheduler fields, reviewed-wrapper metadata validation, disallowed shell-fragment checks, rendering fixtures | Draft v0.1 guardrail |
 | Readiness and validation levels | `plugin-manifest` | R0-R7 readiness levels, V1-V7 validation levels | Draft evidence classification scheme |
@@ -38,7 +38,8 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 - No manifest should be treated as a stable standard.
 - No plugin is certified for scientific correctness.
 - No capsule should be described as portable beyond its verified environment matrix.
-- `mdanalysis-rmsd` is R5 only for the recorded tiny local Windows/Python/MDAnalysis example; it is not R6.
+- `mdanalysis-rmsd` is R5 only for the recorded tiny local Windows/Python/MDAnalysis examples; local venv plus local Conda evidence is still not R6.
+- `gromacs-rmsd` has a blocked local readiness record because `gmx` is not available on PATH; it is still not R4.
 - `mdanalysis-trajectory-analysis` still needs updated evidence under the R0-R7 readiness model.
 - BioPilot has not yet executed the full protein MD stability workflow.
 - Sample data is still a candidate until license, citation, size, and hashes are recorded with the metadata template.
@@ -47,7 +48,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 1. Stabilize `mdanalysis-rmsd` as the first compact R5 capsule.
 2. Re-run `mdanalysis-rmsd` on Linux/Conda or container and move it toward `R6` only if evidence passes.
-3. Record smoke-test evidence and move the GROMACS RMSD capsule toward `R4`.
+3. Install or containerize GROMACS and move the GROMACS RMSD capsule toward `R4` only after `gmx --version` passes.
 4. Confirm sample-data provenance, license, citation, size, and hashes for future capsules.
 5. Add standards crosswalk exports only after capsule evidence is stable.
 6. Review one Slurm reviewed-wrapper example against real HPC practice.
