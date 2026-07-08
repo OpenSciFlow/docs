@@ -1,19 +1,22 @@
 # Glossary
 
-- Agent skill: instructions and schemas that teach an AI agent how to use OpenSciFlow protocol artifacts.
+- Agent skill: instructions and schemas that teach an AI agent how to use OpenSciFlow capsules and protocol artifacts.
 - Artifact: output file or directory registered by a run.
 - BioPilot: the first reference prototype under OpenSciFlow, focused on local protein-computing workflows.
-- Command template: reviewed command string declared in a manifest or workflow template.
+- Command template: reviewed command string declared in a capsule manifest or workflow template.
 - Execution request: structured record of the exact command or reviewed wrapper submission an agent proposes to run.
 - Local Agent: local executor for approved workflow commands.
 - Manifest field policy: rule that execution, license, citation, hardware, model-weight, reproducibility, safety, and limitation fields should be explicit rather than omitted.
 - Manifest-first: design principle that tools and models should declare inputs, outputs, environment, weights, citation, license, and limitations before execution.
 - Model weights: files or checkpoints required by an AI model.
-- OpenSciFlow Skill: agent-facing adapter layer for manifests, workflow templates, execution requests, refusal rules, and run records.
+- Known failure case: recorded failure mode, such as CUDA mismatch, missing weights, missing modules, blocked container runtime, path assumption, or permission issue.
+- OpenSciFlow Skill: agent-facing adapter layer for capsules, manifests, workflow templates, execution requests, refusal rules, and run records.
 - Plugin manifest: metadata file for one tool/model.
-- Readiness level: R0-R6 label describing how much evidence exists for inspection, installation, execution, citation, and reproducibility.
+- Readiness level: R0-R7 label describing how much evidence exists for indexing, manifest validation, environment and command-template review, smoke tests, run records, multi-environment verification, and external reproduction.
 - Reviewed wrapper: wrapper script, such as a Slurm job script, that is declared and reviewed before an agent may render or submit it.
 - Run manifest: reproducibility record for one BioPilot execution.
 - Run record: audit record for a tool or workflow run, including commands, versions, inputs, outputs, logs, hashes, citation, license, limitations, and warnings.
 - Slurm: HPC scheduler commonly used for cluster jobs.
+- Verified environment matrix: evidence table recording where a capsule has passed, failed, or not yet been tested.
+- Verified execution capsule: execution-facing package containing a manifest, environment spec, reviewed command templates, smoke tests, test inputs, expected outputs, run records, verified environment matrix, and known failure records.
 - Workflow template: reusable task plan with inputs, outputs, steps, DAG, plugins, fallbacks, reproducibility requirements, and limitations.

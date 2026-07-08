@@ -6,12 +6,13 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 | Artifact | Repository | Current evidence | Current status |
 |---|---|---|---|
+| Verified execution capsule registry | `verified-capsules` | Initial GROMACS RMSD capsule skeleton, capsule schemas, environment-spec schema, run-record schema, verified-env schema, known-failure schema | Early skeleton; no verified runs claimed yet |
 | Plugin manifest schema | `plugin-manifest` | JSON Schema, 7 example manifests, license/citation checks, CI validation | Draft v0.1, reviewable metadata |
 | Command-template rules | `plugin-manifest` | Placeholder validation, `{run_directory}` support, normalized scheduler fields, reviewed-wrapper metadata validation, disallowed shell-fragment checks, rendering fixtures | Draft v0.1 guardrail |
-| Readiness and validation levels | `plugin-manifest` | R0-R6 readiness levels, V1-V7 validation levels | Draft evidence classification scheme |
+| Readiness and validation levels | `plugin-manifest` | R0-R7 readiness levels, V1-V7 validation levels | Draft evidence classification scheme |
 | Local-agent contract | `plugin-manifest` | Agent responsibilities and refusal rules | Draft execution contract |
 | HPC/Slurm metadata | `plugin-manifest` | Portable Slurm field guide, submit-command fixture, and reviewed-wrapper metadata | Draft review guide |
-| OpenSciFlow Skill | `opensciflow-skill` | Skill spec, schemas, prompts, five examples, GROMACS and MACE Slurm execution requests, Slurm workflow/execution alignment checks, BioPilot run-record crosswalk, coding-agent behavior review, validation scripts, refusal tests | Early agent-adoption draft |
+| OpenSciFlow Skill | `opensciflow-skill` | Skill spec, schemas, prompts, five examples, GROMACS and MACE Slurm execution requests, Slurm workflow/execution alignment checks, BioPilot run-record crosswalk, coding-agent behavior review, validation scripts, refusal tests | Early capsule-inspection and agent-adoption draft |
 | Workflow template schema | `workflow-templates` | JSON Schema, 7 protein/materials templates, CI validation, protein-template review matrix | Draft v0.1 task templates |
 | Workflow DAG validation | `workflow-templates` | Step/DAG consistency checks | Draft structural validation |
 | Workflow artifact handoff | `workflow-templates` | `consumes` / `produces` checks across 7 protein/materials templates | Draft executable-structure validation |
@@ -25,6 +26,7 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 | Repository | CI check | Validates |
 |---|---|---|
+| `verified-capsules` | Validate capsule skeletons | Capsule structure, manifest, environment spec, command templates, smoke-test metadata, run-record schema, verified-env matrix, known-failure records |
 | `plugin-manifest` | Validate plugin manifests | Schema, command placeholders, command-template guardrails, license/citation metadata, Slurm submit-command rendering fixtures |
 | `opensciflow-skill` | Validate skill fixtures | Skill input/output schemas, execution requests, reviewed-wrapper refusal cases, run-record schema, BioPilot run-record crosswalk |
 | `workflow-templates` | Validate workflow templates | Schema, DAG consistency, plugin list structure, artifact handoff |
@@ -35,22 +37,25 @@ OpenSciFlow is an early public draft. This page separates current evidence from 
 
 - No manifest should be treated as a stable standard.
 - No plugin is certified for scientific correctness.
-- `mdanalysis-trajectory-analysis` is not yet `R3`; one failed local dry-run attempt is recorded, and passing dry-run evidence is still missing.
+- No capsule should be described as portable beyond its verified environment matrix.
+- `mdanalysis-trajectory-analysis` still needs updated evidence under the R0-R7 readiness model.
 - BioPilot has not yet executed the full protein MD stability workflow.
 - Sample data is still a candidate until license, citation, size, and hashes are recorded with the metadata template.
 
 ## Next evidence targets
 
-1. Record MDAnalysis dry-run evidence and move the manifest toward `R3`.
-2. Confirm sample-data provenance and hashes.
-3. Produce one validated BioPilot `run_manifest.json` from a public sample run.
-4. Stress-test artifact handoff checks against optional branches and fallback tools.
-5. Review the second Slurm reviewed-wrapper example outside GROMACS against real materials/HPC practice.
-6. Draft v0.2 command-template and run-record RFC.
+1. Convert one successful run trajectory into a complete GROMACS RMSD capsule.
+2. Record smoke-test evidence and move the GROMACS RMSD capsule toward `R4`.
+3. Produce one validated example run record and move it toward `R5`.
+4. Confirm sample-data provenance, license, citation, size, and hashes.
+5. Stress-test artifact handoff checks against optional branches and fallback tools.
+6. Review one Slurm reviewed-wrapper example against real HPC practice.
+7. Draft v0.2 capsule, command-template, verified-env, and run-record RFC.
 
 ## Planning references
 
 - v0.2 RFC outline: `reference/v0.2-rfc-outline.md`
+- Verified capsules: https://github.com/OpenSciFlow/verified-capsules
 - Reviewed-wrapper RFC draft: `reference/v0.2-reviewed-wrapper-rfc.md`
 - R3 evidence template: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/r3-evidence-template.md
 - Validation levels: https://github.com/OpenSciFlow/plugin-manifest/blob/main/docs/validation-levels.md
